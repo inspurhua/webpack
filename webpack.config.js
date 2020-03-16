@@ -66,25 +66,34 @@ module.exports = {
           outputPath: "media"
         }
       },
-      {
-        test:/\.js$/,
-        exclude:/node_modules/,
-        loader:'eslint-loader',
-        options:{}
-      },
+      
       {
         test:/\.js$/,
         exclude:/node_modules/,
         loader:'babel-loader',
         options:{
-          presets:['@babel/preset-env']
+          presets:[['@babel/preset-env',{
+            useBuiltIns:'usage',
+            corejs:{
+              version:3
+            },
+            targets:{
+              chrome:'60',
+              firefox:'50',
+              ie:'9'
+            }
+          }]]
         }
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
+      minify:{
+        collapseWhitespace:true,
+        removeComments:true
+      }
     }),
     new MiniCssExtractPlugin({
       filename: "css/bundle.css"
@@ -97,5 +106,5 @@ module.exports = {
     port: 3000,
     open: true
   },
-  mode: "development"
+  mode: "production"
 };

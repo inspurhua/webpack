@@ -18,9 +18,11 @@
   "homepage": "https://github.com/inspurhua/wpack#readme",
   "devDependencies": {
     "@babel/core": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "babel": "^6.23.0",
     "babel-loader": "^8.0.6",
+    "core-js": "^3.6.4",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -53,8 +55,5 @@
       "not dead",
       "not op_mini all"
     ]
-  },
-  "eslintConfig": {
-    "extends": "airbnb-base"
-  }
+  } 
 }
