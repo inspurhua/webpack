@@ -1,3 +1,5 @@
+npm config set -g registry https://registry.npm.taobao.org
+npm install -g npm
 npm init
 npm i webpack webpack-cli -g
 npm i webpack webpack-cli -D
