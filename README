@@ -3,4 +3,8 @@ npm install -g npm
 npm init
 npm i webpack webpack-cli -g
 npm i webpack webpack-cli -D
-
+npm i style-loader css-loader less less-loader -D
+npm i url-loader file-loader html-loader -D
+npm i html-webpack-plugin -D
+npm i webpack-dev-server -D
+npx webpack dev-server

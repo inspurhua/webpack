@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('../media/iconfont.eot?t=1584327050004'); /* IE9 */
+  src: url('../media/iconfont.eot?t=1584327050004#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPIAAsAAAAAB8gAAAN7AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDMIMeATYCJAMMCwgABCAFhG0HNhvkBlGUDUqR7OdhbCw7PIy1NiFb073j4GejkuDIePiu4uHf/dD7khTRtQrRE7gq4gEZMVs1dppYTu141tN//9eGSqh7/TySTJP2k/0T3w17nZZJiRAhNAbtMvkvk8LEJEyA1+NYDlO/Rv8PLqf/X1Ei8yzLbe2pCwssDiigvTHaQmuAecPYVUtp0OsJNOonKa8t96dSS4G7BeKB75qlVkql1GSHeqG2ZGyZjcdq1Kfr9A2P/OfHP3NRT1KT4b47txZOafxz+89cflh1OHYR7PEMkCeRMaGkEKelpn3VMDShqtEU1eqTaxUhjeWt4rMsSe1K/3iJqIUzm8EIVCQnxWZ0gj9zTCh2/pOoRT0eY/cblMn09QuMiQtjUl9VqvmEDmLiEcQQgflnZmQBgiGi38cfdBxNapBULMPE8zqx8SU0rbxM+A/H/UgyBsLizt2hs47z4b3cIA4NbXfsYKVcUr5v3CYaIknQobqOhjb19ObohjHxNOxkGDxMUbkdZExsHImGaNq8MBeNy+JPX0ubBOXyV2+eIa/i5K4EZP4Z/nlf6TbL+Ik8oUqQwKRQfqmcQGhtfh7MBlOxbqFpJj0OE+5w/jIun881cTz0b9+7UytA29qrKdATAACCGuSvLFJNUywut4Ul3uTFF9UXxeXf+qxKkCIiK3deOXb+X1IucyU+ZTbR9N1SWnxFqrsi53k8wKBlo3o9o2zlJrUi9yC4vid7yju0wctSPb/SLVZGP2M1PGVwHTlWIzJSmHsInPsAd8xv03sq5Vk++Y9yn1O/tZ4NXf7XNxXw4wW69jntLCX1d2kO/lpOmaJanilcrM7FEKplOe5sz58JJjRaOhW0dfr1l/S0DhDqU2wZkjp9kNUbQAthAmo0WYBa9Rah0bjV5CZdSFWUBox5AQjt3pC0eglZuw9aCF+o0esPtdojQ6PdkJ6zyVDc7XgTmowOZDVCYXaaCKrlTpB9QPcamZTk+qQLUuF7wdLMIhtdYYI0xoDqOteoqRGQV5XG4Ac2wyhKoaIqDdBmpaCGs5G5eV7ZjpTs8rjUsYogE0MOYHkCPlsqIdzKrJN7/AFyXUVMVFPUZLxApODXDnQKrQW6EiWtiq5lm8KNy8CYAASSioElMKCIhFIgK28VQDam8HoEMiMqKiXaipT5JfHzrYJGeLkcKXIU+SLyG/VoeyaXSgA=') format('woff2'),
+  url('../media/iconfont.woff?t=1584327050004') format('woff'),
+  url('../media/iconfont.ttf?t=1584327050004') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../media/iconfont.svg?t=1584327050004#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ali:before {
+  content: "\e649";
+}
+
+.icon-wechat:before {
+  content: "\e932";
+}
+
