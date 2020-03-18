@@ -40,7 +40,7 @@ module.exports = {
         loader: "html-loader"
       },
       {
-        exclude: /\.(html|css|js|less|jpg|png|gif)/,
+        exclude: /\.(html|css|js|less|jpe?g|png|gif)/,
         loader: "file-loader",
         options: {
           name: "[contenthash:10].[ext]",

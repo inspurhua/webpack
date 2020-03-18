@@ -101,7 +101,7 @@ module.exports = {
             loader: "html-loader"
           },
           {
-            exclude: /\.(html|css|js|less|jpg|png|gif)/,
+            exclude: /\.(html|css|js|less|jpe?g|png|gif)/,
             loader: "file-loader",
             options: {
               name: "[name].[contenthash:10].[ext]",
@@ -121,7 +121,7 @@ module.exports = {
       }
     }),
     new MiniCssExtractPlugin({
-      filename: "css/bundle.[contenthash:10].css"
+      filename: "css/[name].[contenthash:10].css"
     }),
     new OptimizeCssAssetsWebpackPlugin(),
     new CleanWebpackPlugin(),
