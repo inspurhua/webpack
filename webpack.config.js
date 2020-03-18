@@ -8,6 +8,7 @@ const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //剥离单独文件
 const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin"); //压缩
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 // process.env.NODE_ENV = 'prouction'
 //postcss-loader 使用browerslist中的那个环境,
 //loader数组从下网上执行
@@ -33,7 +34,7 @@ module.exports = {
     filename: "js/[name].[contenthash:10].js",
     path: resolve(__dirname, "dist"),
     publicPath:"/",
-    chunkFileName:'js/[name]_chunk.js',//非入口chunk
+    chunkFilename:'js/[name]_chunk.js'//非入口chunk
     // library:'[name]',
     // librayTarget:'window'//window.[name] = 这个js库,可以是global[nodejs]  commonjs[通过comm导入使用],
   },
@@ -122,7 +123,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/bundle.[contenthash:10].css"
     }),
-    new OptimizeCssAssetsWebpackPlugin()
+    new OptimizeCssAssetsWebpackPlugin(),
+    new CleanWebpackPlugin(),
   ],
   devServer: {
     contentBase: resolve(__dirname, "dist"),
